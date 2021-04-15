@@ -1,0 +1,180 @@
+/* fonts */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #333333;
+}
+
+.logo {
+  background: url("../img/logo.png") 50% no-repeat;
+  width: 270px;
+  height: 60px;
+  background-size: 100% auto;
+}
+li.nav-item {
+  padding: 0 0.6em;
+}
+a.nav-link {
+  font-size: 18px;
+}
+.socialmenu {
+  width: 30px;
+  opacity: 0.7;
+}
+
+.hero {
+  background-color: #a4d6df;
+  height: 80vh;
+}
+.hero h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.blackshadow {
+  color: #ffffff;
+  text-shadow: #333333 1px 1px 2px;
+}
+.hero h3 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.hero p {
+  font-size: 20px;
+  width: 90%;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.imgperson {
+  max-height: 500px;
+}
+.somos h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.somos p {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.somos span {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+section {
+  margin-bottom: 4em;
+}
+.advertisement {
+  background-image: url("../img/recursonaranja.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  background-color: #ff7227;
+  color: #ffffff;
+}
+.advertisement h3 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 1em 0;
+}
+.advertisement p {
+  font-size: 20px;
+  font-weight: 200;
+  padding: 1em 0;
+}
+.btn-home {
+  background-color: #ffffff;
+  color: #333333;
+}
+.btn-home:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+.btn-hometwo {
+  color: #ffffff;
+  background-color: #ff7022;
+}
+footer {
+  background-color: #1d1d1b;
+  color: #ffffff;
+  padding: 2em 0;
+}
+.card-orange {
+  background-image: url("../img/card-orange.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 250px;
+  height: 380px;
+  margin: 0 auto;
+}
+.card-gren {
+  background-image: url("../img/card-green.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 250px;
+  height: 380px;
+  margin: 0 auto;
+}
+.card-orange ul,
+.card-gren ul {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.card-orange li,
+.card-gren li {
+  margin-left: -25px;
+}
+.card-orange h5,
+.card-gren h5 {
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 230px;
+  width: 225px;
+}
+.hero-service {
+  background-image: url("../img/naranja.png");
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 2em 0;
+  color: #ffffff;
+  font-weight: 200;
+}
+.hero-service h3 {
+  font-size: 30px;
+}
+.hero-service p {
+  font-size: 20px;
+}
+.digital-marketing li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 200;
+}
+.graphic-design p,
+.printing p,
+.signs p,
+.digital-marketing p {
+  font-size: 20px;
+  font-weight: 200;
+}
+.graphic-design h3,
+.printing h3,
+.signs h3,
+.digital-marketing h3 {
+  font-weight: 200;
+  font-size: 30px;
+}
+button.navbar-toggler {
+  margin: 0 auto;
+}
