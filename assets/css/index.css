@@ -52,6 +52,33 @@ a.nav-link {
 .imgperson {
   max-height: 500px;
 }
+
+@media (max-width: 400px) {
+  .hero h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .hero h3 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .hero p {
+    font-size: 18px;
+    width: 90%;
+    letter-spacing: 2px;
+    font-weight: 200;
+  }
+}
+
+hr {
+  width: 80%;
+  border: 1px solid #333333;
+  margin-bottom: 2em;
+}
+
 .somos h3 {
   font-size: 24px;
   font-weight: 400;
@@ -102,7 +129,7 @@ section {
 footer {
   background-color: #1d1d1b;
   color: #ffffff;
-  padding: 2em 0;
+  padding-top: 2em;
 }
 .card-orange {
   background-image: url("../img/card-orange.png");
@@ -143,8 +170,6 @@ footer {
 }
 .hero-service {
   background-image: url("../img/naranja.png");
-  background-position: center;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   padding: 2em 0;
   color: #ffffff;
@@ -177,4 +202,15 @@ footer {
 }
 button.navbar-toggler {
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  footer button {
+    margin-top: 0.8rem !important;
+  }
+  .digital-marketing .btn-hometwo {
+    margin-bottom: 2em;
+  }
+}
+footer {
+  margin-top: 0;
 }
