@@ -18,7 +18,7 @@
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="70">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
       <div class="container">
         <a class="navbar-brand logo" href="./"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -30,17 +30,23 @@
             <li class="nav-item">
               <a class="nav-link" href="./">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html#design">Design</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Sevices
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="graphic-design.html">Design</a>
+                <a class="dropdown-item" href="printing.html">Printing</a>
+                <a class="dropdown-item" href="signs.html">Signs</a>
+                <a class="dropdown-item" href="marketing.html">Marketing</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html#print">Print</a>
+              <a class="nav-link" href="index.html#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html#signs">Signs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html#marketing">Marketing</a>
+              <a class="nav-link" href="index.html#contact">Contact Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><img class="socialmenu" src="./assets/img/Facebook_white.png"
@@ -55,16 +61,31 @@
       </div>
     </nav>
   </header>
+
   <section class="hero">
-    <div class="container h-100">
-      <div class="row align-items-center h-100">
+
+    <div class="container ">
+      <div class="row align-items: center">
         <div class="col-12 col-md-8">
-          <h2 class="blackshadow ">We Are Creative People!</h2>
-          <h2 class="">All for your adverising needs!</h2>
-          <h3 class="">Print To Impress</h3>
-          <p>Print advertising coupled with any digital online
-            medium has a great impact on marketing strategies,
-            together they average up to 80% success.</p>
+          <div>
+            <div class="col align-self-start">
+              <h2 class="blackshadow ">We Are Creative People!</h2>
+            </div>
+          </div>
+          <div>
+            <div class="col align-self-center">
+              <h2><span>All for your adverising needs!</span></h2>
+            </div>
+          </div>
+          <div>
+            <div class="col align-self-end tree">
+              <h3>Print to Impress</h3>
+              <p>Print advertising coupled with a web page
+                and social media marketing has a
+                great impact on marketing strategies,
+                together they average up to 80% success.</p>
+            </div>
+          </div>
         </div>
         <div class="col-12 col-md-4 text-right d-none d-md-block">
           <img class="img-fluid imgperson" src="./assets/img/hero-person.png" alt="Moval Print">
@@ -72,76 +93,94 @@
       </div>
     </div>
   </section>
-  <section class="somos">
+
+  <section class="somos" id="about">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-6"> <img class="img-fluid" src="./assets/img/somos.jpg" alt=""> </div>
         <div class="col-12 col-md-6 text-center">
           <h3>Our Creativity Has Reached You!</h3>
-          <p>We creatively design and print all your advertising <br>
-            ideas, we communicate the correct message <br>
+          <p>We creatively design and print <br>
+            all your advertising ideas, <br>
+            we communicate the correct message <br>
             that captivate your customers.
+
           </p>
           <p><span>Imagine, Design then Print...</span></p>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center mb-4">
             <div class="col-2"><img class="socialmenu" src="./assets/img/Facebook_white.png" alt="Facebook"></div>
             <div class="col-2"><img class="socialmenu" src="./assets/img/Instagram_white.png" alt="Instagram"> </div>
           </div>
+          <button type="submit" class="btn btn-hometwo container-fluid">Hello</button>
         </div>
-
       </div>
     </div>
   </section>
+
   <section class="advertisement">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
-        <div class="col-9 text-center">
-          <h3>Print Advertisement Then Exist.</h3>
-          <p>The print is here to stay. Print media continues to be an important and powerful tool
+        <div class="col-7 ">
+          <h3> Advertise Then Exist</h3>
+          <p>The print is here to stay. <br><br> Print media continues to be an important and powerful tool <br>
             for all businesses to communicate and connect with consummers.
           </p>
-          <p>Correct strategies for print and digital advertising, can get more customers than you imagen.</p>
-          <button type="button" class="btn btn-home mb-4">Free Consultation Here</button>
+          <p> Correct strategies for print and digital advertising <br> can get you more customers than you can imagine.
+          </p>
+          <p class="text-center"><button type="button" class="btn btn-home mb-4">Free Consultation Here
+            </button></p>
         </div>
       </div>
     </div>
   </section>
+
   <section class="services">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card card-orange">
+          <div class="card text-center">
+            <img src="./assets/img/service-graphic-design-small.jpg" class="card-img-top" alt="Graphic Design">
             <div class="card-body">
-              <a href="services.html#design">
-                <h5>Graphic <br> Design</h5>
-              </a>
+              <h5 class="card-title">Graphic Design</h5>
+            </div>
+            <div class="card-footer ">
+              <a href="graphic-design.html" class="btn btn-home container-fluid">View more</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card card-gren">
+
+          <div class="card text-center">
+            <img src="./assets/img/service-printing-small.jpg" class="card-img-top" alt="Printing">
             <div class="card-body">
-              <a href="services.html#print">
-                <h5>Print</h5>
-              </a>
+              <h5 class="card-title">Printing</h5>
+            </div>
+            <div class="card-footer ">
+              <a href="printing.html" class="btn btn-home container-fluid">View more</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card card-orange">
+
+          <div class="card text-center">
+            <img src="./assets/img/service-sings-small.jpg" class="card-img-top" alt="Sings">
             <div class="card-body">
-              <a href="services.html#signs">
-                <h5>Sings</h5>
-              </a>
+              <h5 class="card-title">Sings</h5>
+            </div>
+            <div class="card-footer ">
+              <a href="sings.html" class="btn btn-home container-fluid">View more</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card card-gren">
+
+          <div class="card text-center">
+            <img src="./assets/img/service-marketing-small.jpg" class="card-img-top" alt="Marketing">
             <div class="card-body">
-              <a href="services.html#marketing">
-                <h5>Marketing</h5>
-              </a>
+              <h5 class="card-title">Marketing</h5>
+            </div>
+            <div class="card-footer ">
+              <a href="marketing.html" class="btn btn-home container-fluid">View more</a>
             </div>
           </div>
         </div>
@@ -152,34 +191,32 @@
   <section class="contactus" id="contact">
     <div class="container">
       <div class="row  align-items-center">
+        <div class="col-12 text-center">
+          <h3>Contact Us</h3>
+        </div>
         <div class="col-12 col-md-6 mt-4">
           <form class="mb-4">
-
             <div class="form-group">
-
-              <input type="text" class="form-control" id="nombre" placeholder="Jhon Pérez">
+              <input type="text" class="form-control" id="nombre" placeholder="Contact Name">
             </div>
-
             <div class="form-group">
-
-              <input type="email" class="form-control" id="nombre" placeholder="yourmail@domine.com">
+              <input type="text" class="form-control" id="nombre" placeholder="Company Name">
             </div>
-
             <div class="form-group">
-
-              <input type="tel" class="form-control" id="nombre" placeholder="0088898087">
+              <input type="email" class="form-control" id="nombre" placeholder="Email Address">
             </div>
-
             <div class="form-group">
-
+              <input type="tel" class="form-control" id="nombre" placeholder="Telephone Number">
+            </div>
+            <div class="form-group">
               <textarea class="form-control" id="mensaje"
                 placeholder="Hello, I am interested in your services, I would like to make an appointment! "
                 rows="3"></textarea>
             </div>
-
             <button type="submit" class="btn btn-hometwo container-fluid">Send</button>
           </form>
         </div>
+
         <div class="col-12 col-md-6 align-items-center text-center">
           <h4 class="mb-4">951.322.9514</h4>
           <h4 class="mb-4">hello@movalprint.com</h4>
@@ -210,7 +247,7 @@
           <form>
             <div class="row">
               <div class="col-12 col-md-6">
-                <input type="email" class="form-control form-control-sm" id="email" placeholder="yourmail@domain.com">
+                <input type="email" class="form-control form-control-sm" id="email" placeholder="Email Address">
               </div>
               <div class="col-12 col-md-6">
                 <button type="submit" class="btn btn-hometwo container-fluid btn-sm">I want to subscribe!</button>
@@ -219,25 +256,6 @@
           </form>
           <p class="mt-4 text-center">© Copyright - 2021 Moval Print - All Rights Reserved</p>
         </div>
-        <!-- <div class="col-8">
-          <form action="">
-            <div class="row align-items-center">
-              <div class="col-6">
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Jhon Pérez">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control form-control-sm" id="nombre"
-                    placeholder="yourmail@domine.com">
-                </div>
-              </div>
-              <div class="col-6">
-                <button type="submit" class="btn btn-hometwo container-fluid">I want to subscribe!</button>
-              </div>
-
-            </div>
-          </form>
-        </div> -->
       </div>
     </div>
 
