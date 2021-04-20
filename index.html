@@ -16,7 +16,7 @@
   <title>Moval Print</title>
 </head>
 
-<body data-spy="scroll" data-target="#navbarNav" data-offset="70">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="100">
   <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
       <div class="container">
@@ -94,9 +94,12 @@
     </div>
   </section>
 
-  <section class="somos" id="about">
+  <section class="somos ancla " id="about">
     <div class="container">
       <div class="row align-items-center">
+        <div class="col-12 text-center mb-4">
+          <h3>About Us</h3>
+        </div>
         <div class="col-12 col-md-6"> <img class="img-fluid" src="./assets/img/somos.jpg" alt=""> </div>
         <div class="col-12 col-md-6 text-center">
           <h3>Our Creativity Has Reached You!</h3>
@@ -104,18 +107,55 @@
             all your advertising ideas, <br>
             we communicate the correct message <br>
             that captivate your customers.
-
           </p>
           <p><span>Imagine, Design then Print...</span></p>
           <div class="row justify-content-center mb-4">
             <div class="col-2"><img class="socialmenu" src="./assets/img/Facebook_white.png" alt="Facebook"></div>
             <div class="col-2"><img class="socialmenu" src="./assets/img/Instagram_white.png" alt="Instagram"> </div>
           </div>
-          <button type="submit" class="btn btn-hometwo container-fluid">Hello</button>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-hometwo container-fluid" data-toggle="modal"
+            data-target="#modalHello">Hello</button>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalHello" tabindex="-1" aria-labelledby="modalHelloLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHelloLabel">ABOUT US</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            We are a Graphic Design, Printing, Sign & Digital Marketing Service Agency. <br><br>
+
+            At Moval Print We Are Creative People. We have provided our professional services in a personalized way
+            since 2010 <br><br>
+
+            Customers trust our services and products that keep them returning to us every time that they need us and do
+            not
+            hesitate to recommend us. <br><br>
+
+            At Moval Print we are committed to providing quality Graphic Design, Printing, Signs, and Digital Marketing,
+            based on
+            professional service standards. <br><br>
+
+            Our creativity is the brand that distinguishes us as your best option. <br><br>
+
+            Your Success Is Our Greatest Motivation.
+          </p>
+          <p class="text-center"><img class="img-fluid" src="./assets/img/logo-mp.svg" alt="movalprint" width="300px">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="advertisement">
     <div class="container h-100">
@@ -188,7 +228,7 @@
     </div>
   </section>
 
-  <section class="contactus" id="contact">
+  <section class="contactus ancla " id="contact">
     <div class="container">
       <div class="row  align-items-center">
         <div class="col-12 text-center">

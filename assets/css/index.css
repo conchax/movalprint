@@ -274,3 +274,28 @@ footer {
 .services .btn-home {
   border: 1px solid #333333;
 }
+
+.ancla:before {
+  display: block;
+  content: " ";
+  margin-top: -95px;
+  height: 95px;
+  visibility: hidden;
+}
+.modal-content {
+  background-image: url("../img/bg-modal.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  border: 2px solid #ff7022;
+}
+.modal-content h5 {
+  font-size: 30px;
+}
+.modal-header {
+  border-bottom: 0;
+}
+.close {
+  color: #ffffff;
+}
