@@ -26,12 +26,13 @@ a.nav-link {
 }
 
 .hero {
-  background-image: url("../img/background-moval-print.jpg");
+  /* background-image: url("../img/background-moval-print.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #93cacd;
   width: 100%;
-  height: 100vh;
+  height: 98vh;
   vertical-align: middle;
 }
 
@@ -73,60 +74,107 @@ a.nav-link {
 }
 
 .hero h2 {
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
-
+.hero h2,
+.hero h3 {
+  padding-bottom: 2em;
+}
+.pad {
+  margin-left: 2em;
+}
+.padtwo {
+  margin-left: 4em;
+}
+.hero h3 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.hero p {
+  font-size: 17px;
+  width: 70%;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.hero .person {
+  margin-top: 47px;
+}
 .blackshadow {
   color: #ffffff;
   text-shadow: #333333 1px 1px 2px;
 }
-.hero h3 {
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 2px;
+@media (max-width: 992px) {
+  .hero h2.one {
+    margin-top: 90px;
+  }
 }
-
-.hero p {
-  font-size: 17px;
-  width: 70%;
-  letter-spacing: 2px;
-  font-weight: 400;
-}
-
 @media (max-width: 768px) {
-  .tree {
-    margin-top: 0;
-    margin-left: 0;
+  .hero .person {
+    margin: 0 auto;
   }
-  .hero h2 span {
+  .hero h2,
+  .hero h3 {
+    padding-bottom: 0;
+  }
+  .hero .pad,
+  .hero .padtwo {
     margin-left: 0;
-    margin-top: 0;
   }
 }
-
-@media (max-width: 400px) {
-  .hero h2 {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 0px;
-    line-height: 1.5rem;
+@media (max-width: 576px) {
+  .hero .person {
+    width: 200px;
   }
-  .hero .medioum {
-    margin-top: -100px;
+  .hero h2 {
+    font-size: 20px;
   }
   .hero h3 {
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 18px;
   }
 
   .hero p {
-    font-size: 16px;
-    width: 90%;
-    letter-spacing: 2px;
-    font-weight: 400;
-    margin-top: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  .hero .person {
+    width: 315px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero .person {
+    width: 265px;
+  }
+}
+@media (max-width: 375px) and (max-height: 812px) {
+  .hero .person {
+    width: 320px;
+    margin-top: 65px;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .hero .person {
+    width: 250px;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero .person {
+    width: 248px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 320px) {
+  .hero .person {
+    width: 170px;
   }
 }
 
@@ -287,4 +335,182 @@ footer {
 }
 .close {
   color: #ffffff;
+}
+
+/* CSS Whatsapp Chat */
+#whatsapp-chat {
+  position: fixed;
+  background: #fff;
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+  bottom: 90px;
+  right: 10px;
+  overflow: hidden;
+  z-index: 99;
+  animation-name: showchat;
+  animation-duration: 0.02s;
+  transform: scale(1);
+}
+
+a.blantershow-chat {
+  /*   background: #009688; */
+  background: #fff;
+  color: #404040;
+  position: fixed;
+  display: flex;
+  font-weight: 400;
+  justify-content: space-between;
+  z-index: 98;
+  bottom: 25px;
+  right: 30px;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+}
+
+a.blantershow-chat svg {
+  transform: scale(1.2);
+  margin: 0 10px 0 0;
+}
+
+.header-chat {
+  background: #095e54;
+  color: #fff;
+  padding: 8px;
+}
+
+.header-chat h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.header-chat p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.info-chat span {
+  display: block;
+}
+
+#get-label,
+span.chat-label {
+  font-size: 12px;
+  color: #888;
+}
+
+#get-nama,
+span.chat-nama {
+  margin: 5px 0 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+#get-label,
+#get-nama {
+  color: #fff;
+}
+
+span.my-number {
+  display: none;
+}
+
+.blanter-msg {
+  color: #444;
+  padding: 20px;
+  font-size: 12.5px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+textarea#chat-input {
+  border: none;
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  height: 20px;
+  outline: none;
+  resize: none;
+}
+
+a#send-it {
+  color: #555;
+  margin: -5px 0 0 5px;
+  font-weight: 700;
+  padding: 8px;
+  background: #eee;
+  border-radius: 10px;
+}
+
+.first-msg {
+  background: #f5f5f5;
+  padding: 30px;
+  text-align: center;
+}
+
+.first-msg span {
+  background: #e2e2e2;
+  color: #333;
+  font-size: 14.2px;
+  line-height: 1.7;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.start-chat .blanter-msg {
+  display: flex;
+}
+
+#get-number {
+  display: none;
+}
+
+a.close-chat {
+  position: absolute;
+  top: -14px;
+  right: 0px;
+  color: #fff;
+  font-size: 30px;
+}
+
+@keyframes showhide {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes showchat {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #whatsapp-chat {
+    width: auto;
+    right: 10px;
+    font-size: 80%;
+  }
+}
+
+#whatsapp-chat.hide {
+  display: none;
+  animation-name: showhide;
+  animation-duration: 0.5s;
+  transform: scale(1);
+  opacity: 1;
+}
+
+#whatsapp-chat.show {
+  display: block;
+  animation-name: showhide;
+  animation-duration: 0.5s;
+  transform: scale(1);
+  opacity: 1;
 }

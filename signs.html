@@ -126,30 +126,33 @@
           <h3>Contact Us</h3>
         </div>
         <div class="col-12 col-md-6 mt-4">
-          <form class="mb-4">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" class="mb-4">
             <div class="form-group">
-              <input type="text" class="form-control" id="nombre" placeholder="Contact Name">
+              <input type="text" class="form-control" id="name" placeholder="Contact Name" required="required"
+                data-validation-required-message="Please enter your name." />
+              <p class="help-block text-danger"></p>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="nombre" placeholder="Company Name">
+              <input type="text" class="form-control" id="company" placeholder="Company Name " required="required"
+                data-validation-required-message="Please enter your Company." />
+              <p class="help-block text-danger"></p>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" id="nombre" placeholder="Email Address">
+              <input type="tel" class="form-control" id="phone" placeholder="Phone number" required="required"
+                data-validation-required-message="Please enter your phone number ." />
+              <p class="help-block text-danger"></p>
             </div>
             <div class="form-group">
-              <input type="tel" class="form-control" id="nombre" placeholder="Telephone Number">
+              <input type="email" class="form-control" id="email" placeholder="E-mail" required="required"
+                data-validation-required-message="Please enter your emai address." />
+              <p class="help-block text-danger"></p>
             </div>
-            <div class="form-group">
-              <textarea class="form-control" id="mensaje"
-                placeholder="Hello, I am interested in your services, I would like to make an appointment! "
-                rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-hometwo container-fluid">Send</button>
+            <button type="submit" class="btn btn-hometwo container-fluid" id="sendMessageButton">Send</button>
           </form>
         </div>
 
         <div class="col-12 col-md-6 align-items-center text-center">
-          <h4 class="mb-4">(951) 577 9230</h4>
+          <h4 class="mb-4">(951) 577-9230</h4>
           <h4 class="mb-4">hello@movalprint.com</h4>
 
           <div class="row  justify-content-center">
@@ -191,22 +194,44 @@
     </div>
 
   </footer>
-  <!-- Optional JavaScript; choose one of the two! -->
+  <div id='whatsapp-chat' class='hide'>
+    <div class='header-chat'>
+      <div class='head-home'>
+        <h3>How may I help you!</h3>
+        <div class='info-avatar'>
+        </div>
+      </div>
+    </div>
+    <div class='start-chat'>
+      <div class='first-msg'><span>Hello! What can I do for you?</span></div>
+      <div class='blanter-msg'><textarea id='chat-input' placeholder='Write a message' maxlength='120'
+          row='1'></textarea>
+        <a onclick="enviar_mensaje();" id='send-it'>Send</a>
+      </div>
+    </div>
+    <div id='get-number'>+001-(951)5779230</div><a class='close-chat' onclick="cerrar_chat();">×</a>
+  </div>
 
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
+  <a href="javascript:onclik(mostrar_chat();)" class='blantershow-chat' onclick="mostrar_chat();" title='Show Chat'><svg
+      width="20" viewBox="0 0 24 24">
+      <defs />
+      <path fill="#eceff1"
+        d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+      <path fill="#4caf50"
+        d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+      <path fill="#fafafa"
+        d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+    </svg>
+    Chat with Us</a>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <script src="./assets/mail/jqBootstrapValidation.js"></script>
+  <script src="./assets/mail/contact_me.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
