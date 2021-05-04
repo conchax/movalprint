@@ -319,7 +319,7 @@ footer {
   height: 95px;
   visibility: hidden;
 }
-.modal-content {
+.modal-content.about {
   background-image: url("../img/bg-modal.jpg");
   background-position: center;
   background-repeat: no-repeat;

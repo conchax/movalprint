@@ -167,7 +167,7 @@
   <!-- Modal -->
   <div class="modal fade" id="modalHello" tabindex="-1" aria-labelledby="modalHelloLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+      <div class="modal-content about">
         <div class="modal-header">
           <h5 class="modal-title" id="modalHelloLabel">ABOUT US</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -210,12 +210,55 @@
           </p>
           <p> Correct strategies for print and digital advertising <br> can get you more customers than you can imagine.
           </p>
-          <p class="text-center"><button type="button" class="btn btn-home mb-4">Free Consultation Here
-            </button></p>
+          <p class="text-center">
+            <button type="button" class="btn btn-home mb-4" data-toggle="modal" data-target="#modalForm">
+              Free Consultation Here
+            </button>
+          </p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- MODAL -->
+
+  <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" class="mb-4">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Contact Name" required="required"
+                data-validation-required-message="Please enter your name." />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="company" placeholder="Company Name " required="required"
+                data-validation-required-message="Please enter your Company." />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" id="phone" placeholder="Phone number" required="required"
+                data-validation-required-message="Please enter your phone number ." />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="E-mail" required="required"
+                data-validation-required-message="Please enter your emai address." />
+              <p class="help-block text-danger"></p>
+            </div>
+            <button type="submit" class="btn btn-hometwo container-fluid" id="sendMessageButton">Send</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <section class="services">
     <div class="container">
